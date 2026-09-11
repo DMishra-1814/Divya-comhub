@@ -9,59 +9,85 @@
 body{font-family:'Poppins',sans-serif; background:#fefce8; margin:0; padding:12px; background-image:radial-gradient(#111 1px,transparent 1px); background-size:22px 22px;}
 .box{max-width:700px; margin:15px auto; background:white; border:3.5px solid #111; border-radius:24px; box-shadow:8px 8px 0 #111; overflow:hidden;}
 .head{background:linear-gradient(135deg,#ffeb3b,#4ade80); padding:22px 15px; text-align:center; border-bottom:3.5px solid #111;}
-.head h1{font-family:'Caveat',cursive; font-size:40px; margin:0; transform:rotate(-1deg);}
-.list{padding:14px;}
-.item{display:flex; gap:12px; border:2.5px solid #111; border-radius:14px; padding:13px; margin:9px 0; box-shadow:4px 4px 0 #111; background:white; cursor:pointer;}
-.item:active{transform:translate(2px,2px); box-shadow:2px 2px 0 #111;}
-.num{min-width:38px; height:38px; background:#111; color:#ffeb3b; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px;}
-.page{display:none; padding:20px;}
-.page.active{display:block;}
-.card{border:2.5px solid #111; border-radius:16px; padding:15px; margin:12px 0; box-shadow:5px 5px 0 #111; background:white; line-height:1.7; font-size:14px;}
-h2{font-family:'Caveat',cursive; font-size:32px; margin:0 0 10px 0;}
-h3{font-size:16px; background:#fef08a; display:inline-block; padding:3px 10px; border-radius:20px; border:2px solid #111;}
-.btn{display:block; text-align:center; background:#111; color:#ffeb3b; padding:12px; border-radius:30px; font-weight:800; margin:18px 0; cursor:pointer; border:none; width:100%;}
-.foot{background:#111; color:#ffeb3b; text-align:center; padding:12px; font-weight:800; font-size:12px;}
+.head h1{font-family:'Caveat',cursive; font-size:40px; margin:0;}
+.list{padding:14px; background:white;}
+.item{display:flex; gap:12px; border:2.5px solid #111; border-radius:14px; padding:13px; margin:9px 0; box-shadow:4px 4px 0 #111; background:white; text-decoration:none; color:#111;}
+.num{min-width:38px; height:38px; background:#111; color:#ffeb3b; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800;}
+.page{margin:18px 12px; background:white; border:3.5px solid #111; border-radius:20px; box-shadow:6px 6px 0 #111; padding:18px;}
+.card{border:2.5px solid #111; border-radius:14px; padding:14px; margin:10px 0; box-shadow:4px 4px 0 #111; background:white; line-height:1.7; font-size:14px;}
+h2{font-family:'Caveat',cursive; font-size:28px; margin:0 0 8px 0;}
+.btn{display:block; text-align:center; background:#111; color:#ffeb3b; padding:10px; border-radius:30px; font-weight:800; margin-top:12px; text-decoration:none;}
+.foot{background:#111; color:#ffeb3b; text-align:center; padding:10px; font-weight:800; font-size:12px;}
+html{scroll-behavior:smooth;}
 </style>
 </head>
 <body>
 <div class="box">
-<div class="head" id="topHead">
+<div class="head">
 <h1>📚 Divya ComHub 1-30</h1>
 <p style="background:#111; color:#ffeb3b; display:inline-block; padding:6px 14px; border-radius:20px; font-weight:800; margin-top:8px; font-size:12px;">Divya ki taraf se aap log ke liye | Basti</p>
 </div>
 
-<div id="listView" class="list">
-<div class="item" onclick="openPage(1)"><div class="num">1</div><div><b>1. PM Kya Hai?</b><br><small>Product ka Maa-Baap</small></div></div>
-<div class="item" onclick="openPage(2)"><div class="num">2</div><div><b>2. PM vs Project Manager</b></div></div>
-<div class="item" onclick="openPage(3)"><div class="num">3</div><div><b>3. Product Lifecycle</b></div></div>
-<div class="item" onclick="openPage(4)"><div class="num">4</div><div><b>4. User Story</b></div></div>
-<div class="item" onclick="openPage(5)"><div class="num">5</div><div><b>5. PRD</b></div></div>
-<div class="item" onclick="openPage(6)"><div class="num">6</div><div><b>6. Wireframe</b></div></div>
-<div class="item" onclick="openPage(7)"><div class="num">7</div><div><b>7. MVP</b></div></div>
-<div class="item" onclick="openPage(8)"><div class="num">8</div><div><b>8. Agile & Scrum</b></div></div>
-<div class="item" onclick="openPage(9)"><div class="num">9</div><div><b>9. JIRA</b></div></div>
-<div class="item" onclick="openPage(10)"><div class="num">10</div><div><b>10. Case Study</b></div></div>
-<div class="item" onclick="openPage(11)"><div class="num">11</div><div><b>11. CIRCLES</b></div></div>
-<div class="item" onclick="openPage(12)"><div class="num">12</div><div><b>12. A/B Testing</b></div></div>
-<div class="item" onclick="openPage(13)"><div class="num">13</div><div><b>13. Design Thinking</b></div></div>
-<div class="item" onclick="openPage(14)"><div class="num">14</div><div><b>14. Competitor Analysis</b></div></div>
-<div class="item" onclick="openPage(15)" style="background:#f9a8d4;"><div class="num">15</div><div><b>15. Divya Mishra Basti se PCM students ⭐</b></div></div>
-<div class="item" onclick="openPage(16)"><div class="num">16</div><div><b>16. User Interview</b></div></div>
-<div class="item" onclick="openPage(17)"><div class="num">17</div><div><b>17. KPI</b></div></div>
-<div class="item" onclick="openPage(18)"><div class="num">18</div><div><b>18. GTM Strategy</b></div></div>
-<div class="item" onclick="openPage(19)"><div class="num">19</div><div><b>19. Business Model</b></div></div>
-<div class="item" onclick="openPage(20)"><div class="num">20</div><div><b>20. Monetization</b></div></div>
-<div class="item" onclick="openPage(21)"><div class="num">21</div><div><b>21. Stakeholder</b></div></div>
-<div class="item" onclick="openPage(22)"><div class="num">22</div><div><b>22. Estimation</b></div></div>
-<div class="item" onclick="openPage(23)"><div class="num">23</div><div><b>23. API</b></div></div>
-<div class="item" onclick="openPage(24)"><div class="num">24</div><div><b>24. Tech Stack</b></div></div>
-<div class="item" onclick="openPage(25)"><div class="num">25</div><div><b>25. Product Metrics AARRR</b></div></div>
-<div class="item" onclick="openPage(26)"><div class="num">26</div><div><b>26. Prioritization RICE</b></div></div>
-<div class="item" onclick="openPage(27)"><div class="num">27</div><div><b>27. Roadmap</b></div></div>
-<div class="item" onclick="openPage(28)"><div class="num">28</div><div><b>28. PM Interview Questions</b></div></div>
-<div class="item" onclick="openPage(29)"><div class="num">29</div><div><b>29. PM Resume Basti</b></div></div>
-<div class="item" onclick="openPage(30)" style="background:#facc15;"><div class="num">30</div><div><b>30. Thank You 💛</b></div></div>
+<div class="list">
+<a class="item" href="#p1"><div class="num">1</div><div><b>1. PM Kya Hai?</b></div></a>
+<a class="item" href="#p2"><div class="num">2</div><div><b>2. PM vs Project Manager</b></div></a>
+<a class="item" href="#p3"><div class="num">3</div><div><b>3. Product Lifecycle</b></div></a>
+<a class="item" href="#p4"><div class="num">4</div><div><b>4. User Story</b></div></a>
+<a class="item" href="#p5"><div class="num">5</div><div><b>5. PRD</b></div></a>
+<a class="item" href="#p6"><div class="num">6</div><div><b>6. Wireframe</b></div></a>
+<a class="item" href="#p7"><div class="num">7</div><div><b>7. MVP</b></div></a>
+<a class="item" href="#p8"><div class="num">8</div><div><b>8. Agile</b></div></a>
+<a class="item" href="#p9"><div class="num">9</div><div><b>9. JIRA</b></div></a>
+<a class="item" href="#p10"><div class="num">10</div><div><b>10. Case Study</b></div></a>
+<a class="item" href="#p11"><div class="num">11</div><div><b>11. CIRCLES</b></div></a>
+<a class="item" href="#p12"><div class="num">12</div><div><b>12. A/B Testing</b></div></a>
+<a class="item" href="#p13"><div class="num">13</div><div><b>13. Design Thinking</b></div></a>
+<a class="item" href="#p14"><div class="num">14</div><div><b>14. Competitor</b></div></a>
+<a class="item" href="#p15" style="background:#f9a8d4;"><div class="num">15</div><div><b>15. Divya Mishra Basti se PCM students ⭐</b></div></a>
+<a class="item" href="#p16"><div class="num">16</div><div><b>16. User Interview</b></div></a>
+<a class="item" href="#p17"><div class="num">17</div><div><b>17. KPI</b></div></a>
+<a class="item" href="#p18"><div class="num">18</div><div><b>18. GTM</b></div></a>
+<a class="item" href="#p19"><div class="num">19</div><div><b>19. Business Model</b></div></a>
+<a class="item" href="#p20"><div class="num">20</div><div><b>20. Monetization</b></div></a>
+<a class="item" href="#p21"><div class="num">21</div><div><b>21. Stakeholder</b></div></a>
+<a class="item" href="#p22"><div class="num">22</div><div><b>22. Estimation</b></div></a>
+<a class="item" href="#p23"><div class="num">23</div><div><b>23. API</b></div></a>
+<a class="item" href="#p24"><div class="num">24</div><div><b>24. Tech Stack</b></div></a>
+<a class="item" href="#p25"><div class="num">25</div><div><b>25. AARRR</b></div></a>
+<a class="item" href="#p26"><div class="num">26</div><div><b>26. RICE</b></div></a>
+<a class="item" href="#p27"><div class="num">27</div><div><b>27. Roadmap</b></div></a>
+<a class="item" href="#p28"><div class="num">28</div><div><b>28. Interview</b></div></a>
+<a class="item" href="#p29"><div class="num">29</div><div><b>29. Resume</b></div></a>
+<a class="item" href="#p30" style="background:#facc15;"><div class="num">30</div><div><b>30. Thank You</b></div></a>
 </div>
 
-<!-- ALL PAGES 1-30 -->
-<div id="p1" class="page"><h2>👨‍💼 1. PM Kya Hota Hai?</h2><h3>Basti - Simple Me</h3>
+<div id="p1" class="page"><h2>1. PM Kya Hai? - Basti</h2><div class="card"><b>PM = Product ka Maa-Baap</b> - User ka dard samjho, solution banao, team se banwao. Director = PM.</div><a class="btn" href="#">↑ Upar Jao 1-30 List Me</a></div>
+
+<div id="p15" class="page" style="border-color:#ec4899;"><h2>15. Divya Mishra Basti se PCM students</h2><div class="card"><b>Naam:</b> Divya Mishra Basti se PCM students<br><b>Class:</b> 12th PCM - Basti<br><b>Dream:</b> CSE se BTech karke PM banna hai<br><b>Location:</b> Basti</div><div class="card">Problem: Coding school me nahi, English video, guide nahi. Behaviour: Raat 9-11 padhti hai. Goal: Basti se hi CSE BTech.</div><div class="card" style="background:#111; color:#ffeb3b; text-align:center; font-weight:800;">Divya Mishra Basti se PCM students - CSE BTech karke PM banegi</div><a class="btn" href="#">↑ Upar Jao</a></div>
+
+<div id="p2" class="page"><h2>2. PM vs Project Manager</h2><div class="card">PM = KYA banana hai, Project Manager = KAB tak</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p3" class="page"><h2>3. Product Lifecycle</h2><div class="card">Idea → Research → Design → Build → Launch → Improve</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p4" class="page"><h2>4. User Story</h2><div class="card">As a 12th PCM Basti se, I want Hindi notes, so that BTech me help ho</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p5" class="page"><h2>5. PRD</h2><div class="card">Blueprint - Problem, Solution, Features</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p6" class="page"><h2>6. Wireframe</h2><div class="card">Kacha design - dabba</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p7" class="page"><h2>7. MVP</h2><div class="card">Chhota version jaldi launch</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p8" class="page"><h2>8. Agile</h2><div class="card">2 hafte ka sprint</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p9" class="page"><h2>9. JIRA</h2><div class="card">To-Do → Done</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p10" class="page"><h2>10. Case Study</h2><div class="card">App teardown</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p11" class="page"><h2>11. CIRCLES</h2><div class="card">Interview formula</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p12" class="page"><h2>12. A/B Testing</h2><div class="card">50-50 test</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p13" class="page"><h2>13. Design Thinking</h2><div class="card">Empathize Define Ideate Prototype Test</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p14" class="page"><h2>14. Competitor</h2><div class="card">Dusre vs Hum</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p16" class="page"><h2>16. User Interview</h2><div class="card">5 sawal pucho</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p17" class="page"><h2>17. KPI</h2><div class="card">Number se success</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p18" class="page"><h2>18. GTM</h2><div class="card">Basti WhatsApp me launch</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p19" class="page"><h2>19. Business Model</h2><div class="card">Paise kaise ayenge</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p20" class="page"><h2>20. Monetization</h2><div class="card">Ads, Freemium</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p21" class="page"><h2>21. Stakeholder</h2><div class="card">Sabko manana</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p22" class="page"><h2>22. Estimation</h2><div class="card">Population x %</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p23" class="page"><h2>23. API</h2><div class="card">Waiter - Frontend Backend bridge</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p24" class="page"><h2>24. Tech Stack</h2><div class="card">HTML CSS JS DB</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p25" class="page"><h2>25. AARRR</h2><div class="card">Acquisition Activation Retention Revenue Referral</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p26" class="page"><h2>26. RICE</h2><div class="card">Reach Impact Confidence Effort</div><a class="btn" href="#">↑ Upar</a></div>
+<div id="p27" class="page"><h2>27. Roadmap</h2><div class="card">Now Next Later</div><a class="btn" href="#">↑ Upar</a></div>
+<div
