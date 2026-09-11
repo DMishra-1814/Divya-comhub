@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PM Metrics Kya Hai? | Divya ComHub PM</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+body{font-family:'Poppins', sans-serif; background: radial-gradient(circle at top left, #fef9c3, #e0e7ff, #fce7f3); margin:0; padding:15px;}
+.container{max-width:880px; margin:20px auto; background:#ffffff; border-radius:24px; overflow:hidden; border:3px solid transparent; background-clip:padding-box; position:relative; box-shadow:0 15px 40px rgba(0,0,0,0.12);}
+.container::before{content:''; position:absolute; inset:0; padding:3px; background:linear-gradient(135deg,#facc15,#4a3aff,#ec4899); border-radius:24px; -webkit-mask:linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite:xor; mask-composite:exclude; pointer-events:none;}
+.header{background: linear-gradient(135deg,#1e1b4b 0%, #4a3aff 50%, #ec4899 100%); color:white; padding:40px 25px; text-align:center; position:relative;}
+.header h1{margin:0; font-size:30px; font-weight:800; letter-spacing:0.5px; text-shadow:0 2px 10px rgba(0,0,0,0.2);}
+.header p{opacity:0.9; margin-top:10px; font-size:14px; background:rgba(255,255,255,0.15); display:inline-block; padding:6px 14px; border-radius:20px;}
+.header::after{content:'📊'; position:absolute; bottom:-18px; left:50%; transform:translateX(-50%); background:white; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:24px; box-shadow:0 4px 15px rgba(0,0,0,0.15);}
+.content{padding:35px 25px; color:#1f2937;}
+h2{font-size:23px; font-weight:800; color:#1e1b4b; position:relative; padding-left:18px; margin-top:40px; border:none;}
+h2::before{content:''; position:absolute; left:0; top:5px; width:6px; height:28px; background:linear-gradient(180deg,#facc15,#ec4899); border-radius:10px;}
+h2::after{content:''; position:absolute; left:0; bottom:-6px; width:100%; height:2px; background:repeating-linear-gradient(90deg,#e5e7eb 0 8px, transparent 8px 14px);}
+.card{background:white; border:2px solid #e5e7eb; padding:20px; border-radius:16px; margin:16px 0; position:relative; box-shadow:0 4px 12px rgba(0,0,0,0.04); transition:0.3s;}
+.card:hover{transform:translateY(-3px); border-color:#c4b5fd; box-shadow:0 8px 20px rgba(74,58,255,0.12);}
+.card::after{content:''; position:absolute; top:0; right:0; width:40px; height:40px; background:linear-gradient(135deg,#facc15,#ec4899); border-radius:0 16px 0 16px; opacity:0.15;}
+.metric-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:14px; margin:18px 0;}
+.metric{padding:18px; border-radius:16px; text-align:center; border:2px solid; position:relative; overflow:hidden;}
+.metric b{font-size:22px; display:block;}
+.metric span{font-size:12px; opacity:0.8;}
+.m1{background:linear-gradient(135deg,#fef9c3,#fde047); border-color:#facc15; color:#713f12;}
+.m2{background:linear-gradient(135deg,#dcfce7,#bbf7d0); border-color:#86efac; color:#14532d;}
+.m3{background:linear-gradient(135deg,#dbeafe,#bfdbfe); border-color:#93c5fd; color:#1e3a8a;}
+.m4{background:linear-gradient(135deg,#fce7f3,#fbcfe8); border-color:#f9a8d4; color:#831843;}
+.north-star{background: radial-gradient(circle at 30% 30%, #1e1b4b, #000); color:white; padding:22px; border-radius:18px; border:2px dashed #facc15; text-align:center; margin:20px 0; position:relative;}
+.north-star::before{content:'⭐'; position:absolute; top:-12px; left:20px; background:#facc15; width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center;}
+.tag{display:inline-block; background:linear-gradient(135deg,white,#f5f3ff); border:2px solid #ddd6fe; color:#4a3aff; padding:7px 16px; border-radius:30px; font-size:12px; font-weight:700; margin:5px; box-shadow:0 2px 6px rgba(0,0,0,0.05);}
+a.home{display:flex; align-items:center; justify-content:center; gap:8px; margin:35px auto 10px; background:linear-gradient(90deg,#1e1b4b,#4a3aff,#ec4899); color:white; padding:14px 28px; border-radius:40px; text-decoration:none; font-weight:800; width:220px; box-shadow:0 8px 20px rgba(74,58,255,0.35);}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>📊 PM Metrics Kya Hai?</h1>
+<p>Jo measure nahi karoge, wo improve nahi karoge!</p>
+</div>
+<div class="content">
+
+<p style="text-align:center; font-size:15px;">Metrics matlab <b style="background:linear-gradient(90deg,#4a3aff,#ec4899); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Product ka Report Card</b> - Product chal raha hai ya fail ho raha hai kaise pata chalega?</p>
+
+<h2>🌟 North Star Metric - Sabse Jaruri</h2>
+<div class="north-star">
+<b>North Star = Ek aisa number jo bataye product sahi direction me hai</b><br><br>
+WhatsApp ka: Daily Messages Sent<br>
+Amazon ka: Monthly Purchases<br>
+<b>Teri Divya ComHub ka: Monthly Forms Filled ⭐</b>
+</div>
+
+<h2>📈 4 Main Metrics (AARRR)</h2>
+<div class="metric-grid">
+<div class="metric m1"><b>DAU/WAU</b><span>Kitne log roz aate hai?</span></div>
+<div class="metric m2"><b>Retention</b><span>Wapas kitne aaye?</span></div>
+<div class="metric m3"><b>Conversion</b><span>Kitno ne form bhara?</span></div>
+<div class="metric m4"><b>Churn</b><span>Kitne log chhod gaye?</span></div>
+</div>
+
+<h2>🎯 Example Se Samjho</h2>
+<div class="card">
+<b>Teri Website ka Example:</b><br>
+👥 100 log aaye site pe<br>
+👀 60 ne page dekha (60% Engagement)<br>
+📝 20 ne form pe click kiya (33% Conversion)<br>
+✅ 10 ne form complete kiya (50% Success)<br><br>
+<u style="text-decoration: wavy underline; text-decoration-color:#ec4899; text-decoration-thickness:2px;">Ab samajh aaya kaha problem hai?</u> Click se Complete tak!
+</div>
+
+<h2>🛠️ Kaise Track Kare?</h2>
+<span class="tag">📊 Google Analytics</span>
+<span class="tag">📈 Mixpanel</span>
+<span class="tag">🔥 Hotjar</span>
+<span class="tag">📋 Amplitude</span>
+
+<div class="card" style="border-style:dashed; border-color:#facc15; background:linear-gradient(135deg,#fefce8,#fff7ed);">
+<b>💡 Pro Tip:</b> Har feature launch karne se pehle socho - <i>"Isse kaunsa number badhega?"</i> Agar jawab nahi hai, toh feature mat banao!
+</div>
+
+<a class="home" href="index.html">← Back to Home 🏠</a>
+</div>
+</div>
+</body>
+</html>
