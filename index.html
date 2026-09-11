@@ -1,21 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Divya Comhub</title>
+<title>Divya ComHub - PM Sikho Job Pao</title>
 <style>
-body{font-family:Arial;text-align:center;background:#eef2ff;padding:20px}
-a{display:block;background:white;margin:12px auto;padding:15px;max-width:320px;border-radius:10px;text-decoration:none;color:blue;font-weight:bold;box-shadow:0 2px 8px #0001}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Caveat:wght@700&display=swap');
+body{font-family:'Poppins', sans-serif; background:#fefce8; margin:0; padding:12px; background-image: radial-gradient(#111827 1px, transparent 1px); background-size:22px 22px;}
+.container{max-width:1000px; margin:20px auto; background:white; border:3.5px solid #111827; border-radius:28px; box-shadow:10px 10px 0px #111827; overflow:hidden;}
+.header{background: linear-gradient(135deg,#ffeb3b 0%, #4ade80 30%, #60a5fa 60%, #f9a8d4 100%); padding:40px 20px; text-align:center; border-bottom:3.5px solid #111827; position:relative;}
+.header h1{font-family:'Caveat', cursive; font-size:48px; margin:0; color:#111827; transform:rotate(-1.5deg); line-height:1.1;}
+.header p{font-weight:800; background:#111827; color:white; display:inline-block; padding:8px 20px; border-radius:30px; margin-top:15px; font-size:13px;}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; padding:25px 20px;}
+.card{border:3px solid #111827; border-radius:20px; padding:18px; background:white; box-shadow:6px 6px 0px #111827; transition:0.2s; position:relative; text-decoration:none; color:#111827; display:block;}
+.card:hover{transform:translate(-3px,-3px); box-shadow:9px 9px 0px #111827;}
+.card::after{content:''; position:absolute; top:-10px; right:18px; width:50px; height:14px; background:#ffeb3b; border-left:2px dashed #111827; border-right:2px dashed #111827; transform:rotate(4deg);}
+.num{width:38px; height:38px; border:2.5px solid #111827; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:15px; margin-bottom:10px; box-shadow:3px 3px 0px #111827;}
+.c1 .num{background:#ffeb3b;} .c2 .num{background:#4ade80;} .c3 .num{background:#60a5fa; color:white;} .c4 .num{background:#f9a8d4;}
+.c5 .num{background:#c4b5fd;} .c6 .num{background:#fdba74;} .c7 .num{background:#86efac;} .c8 .num{background:#fca5a5;}
+.c9 .num{background:#f9a8d4;} .c10 .num{background:#fde047;} .c11 .num{background:#111827; color:#ffeb3b;} .c12 .num{background:#22d3ee;}
+.card h3{margin:8px 0 6px; font-size:17px; font-weight:800;}
+.card p{margin:0; font-size:12.5px; opacity:0.8; line-height:1.5;}
+.badge{position:absolute; top:12px; right:12px; font-size:10px; font-weight:800; padding:4px 10px; border-radius:20px; border:2px solid #111827;}
+.b1{background:#dcfce7;} .b2{background:#ffedd5;} .b3{background:#111827; color:#ffeb3b;}
+.footer{text-align:center; padding:20px; border-top:3.5px dashed #111827; background:#f8fafc; font-weight:700; font-size:13px;}
 </style>
 </head>
 <body>
-<h1>📘 Product Management</h1>
-<p>By Divya Mishra</p>
-<a href="about-pm.html">1. What is PM</a>
-<a href="role-of-pm.html">2. Role of PM</a>
-<a href="where-needed.html">3. Where Needed</a>
-<a href="product-lifecycle.html">4. Product Lifecycle</a>
-<a href="tools-used-by-pm.html">5. Tools Used by PM</a>
-<a href="how-to-become-pm.html">6. How to Become a PM</a>
+<div class="container">
+<div class="header">
+<h1>Divya ComHub 🚀<br>PM Sikho, Job Pao!</h1>
+<p>✨ 12 Pages = Complete Product Manager Guide ✨</p>
+</div>
+
+<div class="grid">
+<!-- Level 1 -->
+<a class="card c1" href="pm-kya-hai.html"><div class="num">01</div><span class="badge b1">START</span><h3>PM Kya Hota Hai?</h3><p>Product Manager ka kaam kya hai simple bhasha me</p></a>
+<a class="card c2" href="pm-role.html"><div class="num">02</div><h3>PM Ka Role Kya Hai?</h3><p>Day to day kaam, responsibility sab</p></a>
+<a class="card c3" href="how-to-become-pm.html"><div class="num">03</div><h3>PM Kaise Bante Hai?</h3><p>Roadmap bina degree ke PM kaise bane</p></a>
+<a class="card c4" href="pm-tools.html"><div class="num">04</div><h3>PM Tools Kaunse Hai?</h3><p>Jira, Notion, Figma sab tools ki list</p></a>
+
+<!-- Level 2 -->
+<a class="card c5" href="product-lifecycle.html"><div class="num">05</div><span class="badge b2">CORE</span><h3>Product Lifecycle</h3><p>Idea se Launch aur Decline tak</p></a>
+<a class="card c6" href="roadmap.html"><div class="num">06</div><h3>Product Roadmap</h3><p>GPS of product - kaise banate hai</p></a>
+<a class="card c7" href="mvp.html"><div class="num">07</div><h3>MVP Kya Hai?</h3><p>Kam me zyada seekhna - real examples</p></a>
+
+<!-- Level 3 -->
+<a class="card c8" href="agile-scrum.html"><div class="num">08</div><span class="badge b2">ADVANCE</span><h3>Agile & Scrum</h3><p>PM ki working style simple me</p></a>
+<a class="card c9" href="user-persona.html"><div class="num">09</div><h3>User Persona & Journey</h3><p>User ko samjhe bina product fail</p></a>
+<a class="card c10" href="pm-metrics.html"><div class="num">10</div><h3>PM Metrics</h3><p>DAU, Retention, North Star kya hai</p></a>
+
+<!-- Job Wale -->
+<a class="card c11" href="case-study.html"><div class="num">11</div><span class="badge b3">⭐ JOB</span><h3>Case Study Kaise Likhe?</h3><p>Ye 1 page job dilayega - Zomato example</p></a>
+<a class="card c12" href="interview-questions.html"><div class="num">12</div><span class="badge b3">🎯 FINAL</span><h3>Interview Questions</h3><p>20 Sawal jawab jo har interview me puche jate hai</p></a>
+</div>
+
+<div class="footer">
+Made with ❤️ by Divya | Khalilabad | PM Journey Started 🚀<br>
+<span style="font-family:'Caveat',cursive; font-size:18px;">Pura padh liya toh tu Top 10% PM ban gayi!</span>
+</div>
+</div>
 </body>
 </html>
