@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dmishra-1814.github.io/Divya-comhub/sitemap.xml
